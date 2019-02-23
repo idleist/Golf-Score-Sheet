@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Golf Score Card</title>
+</head>
+
+<body>
+    <div id="background">
+        <div id="scoreCard" class="container">
+            <div id="scoreHeader" class="row">
+                <h1 class="col-sm-9" id="heading">Golf Course</h1>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-primary btn-sm" id="player1button">Player 1</button>
+                    <button type="button" class="btn btn-primary btn-sm" id="player2button">Player 2</button>
+                    <button type="button" class="btn btn-primary btn-sm" id="inputbutton">Add Players</button>
+                </div>
+            </div>
+            <div id="scoreBody">
+                <div id="scoreBody1" class="container">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <p>Hole</p>
+                            <p>Par</p>
+                            <p>Score</p>
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole1">1</p>
+                            <div>
+                                <input type="radio" id="p1par3hole1" name="p1parhole1" value="3">
+                                <label for="p1par3hole1">3</label>
+                                <input type="radio" id="p1par4hole1" name="p1parhole1" value="4">
+                                <label for="p1par4hole1">4</label>
+                                <input type="radio" id="p1par5hole1" name="p1parhole1" value="5">
+                                <label for="p1par5hole1">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score1" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole2">2</p>
+                            <div>
+                                <input type="radio" id="p1par3hole2" name="p1parhole2" value="3">
+                                <label for="p1par3hole2">3</label>
+                                <input type="radio" id="p1par4hole2" name="p1parhole2" value="4">
+                                <label for="p1par4hole2">4</label>
+                                <input type="radio" id="p1par5hole2" name="p1parhole2" value="5">
+                                <label for="p1par5hole2">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score2" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole3">3</p>
+                            <div>
+                                <input type="radio" id="p1par3hole3" name="p1parhole3" value="3">
+                                <label for="p1par3hole3">3</label>
+                                <input type="radio" id="p1par4hole3" name="p1parhole3" value="4">
+                                <label for="p1par4hole3">4</label>
+                                <input type="radio" id="p1par5hole3" name="p1parhole3" value="5">
+                                <label for="p1par5hole3">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score3" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole4">4</p>
+                            <div>
+                                <input type="radio" id="p1par3hole4" name="p1parhole4" value="3">
+                                <label for="p1par3hole4">3</label>
+                                <input type="radio" id="p1par4hole4" name="p1parhole4" value="4">
+                                <label for="p1par4hole4">4</label>
+                                <input type="radio" id="p1par5hole4" name="p1parhole4" value="5">
+                                <label for="p1par5hole4">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score4" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole5">5</p>
+                            <div>
+                                <input type="radio" id="p1par3hole5" name="p1parhole5" value="3">
+                                <label for="p1par3hole5">3</label>
+                                <input type="radio" id="p1par4hole5" name="p1parhole5" value="4">
+                                <label for="p1par4hole5">4</label>
+                                <input type="radio" id="p1par5hole5" name="p1parhole5" value="5">
+                                <label for="p1par5hole5">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score5" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole6">6</p>
+                            <div>
+                                <input type="radio" id="p1par3hole6" name="p1parhole6" value="3">
+                                <label for="p1par3hole6">3</label>
+                                <input type="radio" id="p1par4hole6" name="p1parhole6" value="4">
+                                <label for="p1par4hole6">4</label>
+                                <input type="radio" id="p1par5hole6" name="p1parhole6" value="5">
+                                <label for="p1par5hole6">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score6" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole7">7</p>
+                            <div>
+                                <input type="radio" id="p1par3hole7" name="p1parhole7" value="3">
+                                <label for="p1par3hole7">3</label>
+                                <input type="radio" id="p1par4hole7" name="p1parhole7" value="4">
+                                <label for="p1par4hole7">4</label>
+                                <input type="radio" id="p1par5hole7" name="p1parhole7" value="5">
+                                <label for="p1par5hole7">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score7" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole8">8</p>
+                            <div>
+                                <input type="radio" id="p1par3hole8" name="p1parhole8" value="3">
+                                <label for="p1par3hole8">3</label>
+                                <input type="radio" id="p1par4hole8" name="p1parhole8" value="4">
+                                <label for="p1par4hole8">4</label>
+                                <input type="radio" id="p1par5hole8" name="p1parhole8" value="5">
+                                <label for="p1par5hole8">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score8" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole9">9</p>
+                            <div>
+                                <input type="radio" id="p1par3hole9" name="p1parhole9" value="3">
+                                <label for="p1par3hole9">3</label>
+                                <input type="radio" id="p1par4hole9" name="p1parhole9" value="4">
+                                <label for="p1par4hole9">4</label>
+                                <input type="radio" id="p1par5hole9" name="p1parhole9" value="5">
+                                <label for="p1par5hole9">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score9" min="1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <p>Hole</p>
+                            <p>Par</p>
+                            <p>Score</p>
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole10">10</p>
+                            <div>
+                                <input type="radio" id="p1par3hole10" name="p1parhole10" value="3">
+                                <label for="p1par3hole10">3</label>
+                                <input type="radio" id="p1par4hole10" name="p1parhole10" value="4">
+                                <label for="p1par4hole10">4</label>
+                                <input type="radio" id="p1par5hole10" name="p1parhole10" value="5">
+                                <label for="p1par5hole10">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score10" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole11">11</p>
+                            <div>
+                                <input type="radio" id="p1par3hole11" name="p1parhole11" value="3">
+                                <label for="p1par3hole11">3</label>
+                                <input type="radio" id="p1par4hole11" name="p1parhole11" value="4">
+                                <label for="p1par4hole11">4</label>
+                                <input type="radio" id="p1par5hole11" name="p1parhole11" value="5">
+                                <label for="p1par5hole11">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score11" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole12">12</p>
+                            <div>
+                                <input type="radio" id="p1par3hole12" name="p1parhole12" value="3">
+                                <label for="p1par3hole12">3</label>
+                                <input type="radio" id="p1par4hole12" name="p1parhole12" value="4">
+                                <label for="p1par4hole12">4</label>
+                                <input type="radio" id="p1par5hole12" name="p1parhole12" value="5">
+                                <label for="p1par5hole12">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score12" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole13">13</p>
+                            <div>
+                                <input type="radio" id="p1par3hole13" name="p1parhole13" value="3">
+                                <label for="p1par3hole13">3</label>
+                                <input type="radio" id="p1par4hole13" name="p1parhole13" value="4">
+                                <label for="p1par4hole13">4</label>
+                                <input type="radio" id="p1par5hole13" name="p1parhole13" value="5">
+                                <label for="p1par5hole13">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score13" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole14">14</p>
+                            <div>
+                                <input type="radio" id="p1par3hole14" name="p1parhole14" value="3">
+                                <label for="p1par3hole14">3</label>
+                                <input type="radio" id="p1par4hole14" name="p1parhole14" value="4">
+                                <label for="p1par4hole14">4</label>
+                                <input type="radio" id="p1par5hole14" name="p1parhole14" value="5">
+                                <label for="p1par5hole14">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score14" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole15">15</p>
+                            <div>
+                                <input type="radio" id="p1par3hole15" name="p1parhole15" value="3">
+                                <label for="p1par3hole15">3</label>
+                                <input type="radio" id="p1par4hole15" name="p1parhole15" value="4">
+                                <label for="p1par4hole15">4</label>
+                                <input type="radio" id="p1par5hole15" name="p1parhole15" value="5">
+                                <label for="p1par5hole15">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score15" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole16">16</p>
+                            <div>
+                                <input type="radio" id="p1par3hole16" name="p1parhole16" value="3">
+                                <label for="p1par3hole16">3</label>
+                                <input type="radio" id="p1par4hole16" name="p1parhole16" value="4">
+                                <label for="p1par4hole16">4</label>
+                                <input type="radio" id="p1par5hole16" name="p1parhole16" value="5">
+                                <label for="p1par5hole16">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score16" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole17">17</p>
+                            <div>
+                                <input type="radio" id="p1par3hole17" name="p1parhole17" value="3">
+                                <label for="p1par3hole17">3</label>
+                                <input type="radio" id="p1par4hole17" name="p1parhole17" value="4">
+                                <label for="p1par4hole17">4</label>
+                                <input type="radio" id="p1par5hole17" name="p1parhole17" value="5">
+                                <label for="p1par5hole17">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score17" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole18">18</p>
+                            <div>
+                                <input type="radio" id="p1par3hole18" name="p1parhole18" value="3">
+                                <label for="p1par3hole18">3</label>
+                                <input type="radio" id="p1par4hole18" name="p1parhole18" value="4">
+                                <label for="p1par4hole18">4</label>
+                                <input type="radio" id="p1par5hole18" name="p1parhole18" value="5">
+                                <label for="p1par5hole18">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score18" min="1">
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Scorecard 2 -->
+                <div id="scoreBody2" class="container">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <p>Hole</p>
+                            <p>Par</p>
+                            <p>Score</p>
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole1">1</p>
+                            <div>
+                                <input type="radio" id="p2par3hole1" name="p2parhole1" value="3">
+                                <label for="p2par3hole1">3</label>
+                                <input type="radio" id="p2par4hole1" name="p2parhole1" value="4">
+                                <label for="p2par4hole1">4</label>
+                                <input type="radio" id="p2par5hole1" name="p2parhole1" value="5">
+                                <label for="p2par5hole1">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score1" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole2">2</p>
+                            <div>
+                                <input type="radio" id="p2par3hole2" name="p2parhole2" value="3">
+                                <label for="p2par3hole2">3</label>
+                                <input type="radio" id="p2par4hole2" name="p2parhole2" value="4">
+                                <label for="p2par4hole2">4</label>
+                                <input type="radio" id="p2par5hole2" name="p2parhole2" value="5">
+                                <label for="p2par5hole2">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score2" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole3">3</p>
+                            <div>
+                                <input type="radio" id="p2par3hole3" name="p2parhole3" value="3">
+                                <label for="p2par3hole3">3</label>
+                                <input type="radio" id="p2par4hole3" name="p2parhole3" value="4">
+                                <label for="p2par4hole3">4</label>
+                                <input type="radio" id="p2par5hole3" name="p2parhole3" value="5">
+                                <label for="p2par5hole3">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score3" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole4">4</p>
+                            <div>
+                                <input type="radio" id="p2par3hole4" name="p2parhole4" value="3">
+                                <label for="p2par3hole4">3</label>
+                                <input type="radio" id="p2par4hole4" name="p2parhole4" value="4">
+                                <label for="p2par4hole4">4</label>
+                                <input type="radio" id="p2par5hole4" name="p2parhole4" value="5">
+                                <label for="p2par5hole4">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score4" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole5">5</p>
+                            <div>
+                                <input type="radio" id="p2par3hole5" name="p2parhole5" value="3">
+                                <label for="p2par3hole5">3</label>
+                                <input type="radio" id="p2par4hole5" name="p2parhole5" value="4">
+                                <label for="p2par4hole5">4</label>
+                                <input type="radio" id="p2par5hole5" name="p2parhole5" value="5">
+                                <label for="p2par5hole5">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score5" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole6">6</p>
+                            <div>
+                                <input type="radio" id="p2par3hole6" name="p2parhole6" value="3">
+                                <label for="p2par3hole6">3</label>
+                                <input type="radio" id="p2par4hole6" name="p2parhole6" value="4">
+                                <label for="p2par4hole6">4</label>
+                                <input type="radio" id="p2par5hole6" name="p2parhole6" value="5">
+                                <label for="p2par5hole6">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score6" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole7">7</p>
+                            <div>
+                                <input type="radio" id="p2par3hole7" name="p2parhole7" value="3">
+                                <label for="p2par3hole7">3</label>
+                                <input type="radio" id="p2par4hole7" name="p2parhole7" value="4">
+                                <label for="p2par4hole7">4</label>
+                                <input type="radio" id="p2par5hole7" name="p2parhole7" value="5">
+                                <label for="p2par5hole7">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score7" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole8">8</p>
+                            <div>
+                                <input type="radio" id="p2par3hole8" name="p2parhole8" value="3">
+                                <label for="p2par3hole8">3</label>
+                                <input type="radio" id="p2par4hole8" name="p2parhole8" value="4">
+                                <label for="p2par4hole8">4</label>
+                                <input type="radio" id="p2par5hole8" name="p2parhole8" value="5">
+                                <label for="p2par5hole8">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score8" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole9">9</p>
+                            <div>
+                                <input type="radio" id="p2par3hole9" name="p2parhole9" value="3">
+                                <label for="p2par3hole9">3</label>
+                                <input type="radio" id="p2par4hole9" name="p2parhole9" value="4">
+                                <label for="p2par4hole9">4</label>
+                                <input type="radio" id="p2par5hole9" name="p2parhole9" value="5">
+                                <label for="p2par5hole9">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score9" min="1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <p>Hole</p>
+                            <p>Par</p>
+                            <p>Score</p>
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole10">10</p>
+                            <div>
+                                <input type="radio" id="p2par3hole10" name="p2parhole10" value="3">
+                                <label for="p2par3hole10">3</label>
+                                <input type="radio" id="p2par4hole10" name="p2parhole10" value="4">
+                                <label for="p2par4hole10">4</label>
+                                <input type="radio" id="p2par5hole10" name="p2parhole10" value="5">
+                                <label for="p2par5hole10">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score10" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole11">11</p>
+                            <div>
+                                <input type="radio" id="p2par3hole11" name="p2parhole11" value="3">
+                                <label for="p2par3hole11">3</label>
+                                <input type="radio" id="p2par4hole11" name="p2parhole11" value="4">
+                                <label for="p2par4hole11">4</label>
+                                <input type="radio" id="p2par5hole11" name="p2parhole11" value="5">
+                                <label for="p2par5hole11">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score11" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole12">12</p>
+                            <div>
+                                <input type="radio" id="p2par3hole12" name="p2parhole12" value="3">
+                                <label for="p2par3hole12">3</label>
+                                <input type="radio" id="p2par4hole12" name="p2parhole12" value="4">
+                                <label for="p2par4hole12">4</label>
+                                <input type="radio" id="p2par5hole12" name="p2parhole12" value="5">
+                                <label for="p2par5hole12">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score12" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole13">13</p>
+                            <div>
+                                <input type="radio" id="p2par3hole13" name="p2parhole13" value="3">
+                                <label for="p2par3hole13">3</label>
+                                <input type="radio" id="p2par4hole13" name="p2parhole13" value="4">
+                                <label for="p2par4hole13">4</label>
+                                <input type="radio" id="p2par5hole13" name="p2parhole13" value="5">
+                                <label for="p2par5hole13">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score13" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole14">14</p>
+                            <div>
+                                <input type="radio" id="p2par3hole14" name="p2parhole14" value="3">
+                                <label for="p2par3hole14">3</label>
+                                <input type="radio" id="p2par4hole14" name="p2parhole14" value="4">
+                                <label for="p2par4hole14">4</label>
+                                <input type="radio" id="p2par5hole14" name="p2parhole14" value="5">
+                                <label for="p2par5hole14">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score14" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole15">15</p>
+                            <div>
+                                <input type="radio" id="p2par3hole15" name="p2parhole15" value="3">
+                                <label for="p2par3hole15">3</label>
+                                <input type="radio" id="p2par4hole15" name="p2parhole15" value="4">
+                                <label for="p2par4hole15">4</label>
+                                <input type="radio" id="p2par5hole15" name="p2parhole15" value="5">
+                                <label for="p2par5hole15">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score15" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole16">16</p>
+                            <div>
+                                <input type="radio" id="p2par3hole16" name="p2parhole16" value="3">
+                                <label for="p2par3hole16">3</label>
+                                <input type="radio" id="p2par4hole16" name="p2parhole16" value="4">
+                                <label for="p2par4hole16">4</label>
+                                <input type="radio" id="p2par5hole16" name="p2parhole16" value="5">
+                                <label for="p2par5hole16">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score16" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole17">17</p>
+                            <div>
+                                <input type="radio" id="p2par3hole17" name="p2parhole17" value="3">
+                                <label for="p2par3hole17">3</label>
+                                <input type="radio" id="p2par4hole17" name="p2parhole17" value="4">
+                                <label for="p2par4hole17">4</label>
+                                <input type="radio" id="p2par5hole17" name="p2parhole17" value="5">
+                                <label for="p2par5hole17">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score17" min="1">
+                        </div>
+                        <div class="col-sm-1">
+                            <p id="hole18">18</p>
+                            <div>
+                                <input type="radio" id="p2par3hole18" name="p2parhole18" value="3">
+                                <label for="p2par3hole18">3</label>
+                                <input type="radio" id="p2par4hole18" name="p2parhole18" value="4">
+                                <label for="p2par4hole18">4</label>
+                                <input type="radio" id="p2par5hole18" name="p2parhole18" value="5">
+                                <label for="p2par5hole18">5</label>
+                            </div>
+                            <input type="number" value="0" class="score" id="score18" min="1">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="scoreFooter">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2 class="scoreboardHeading">Scores</h1>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="player1">Player 1:
+                            <strong>
+                                <span id=player1name></span>
+                            </strong>
+                        </p>
+                        <p id="player1Score">0</p>
+                        <p id="player1Par">0</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="player2">Player 2:
+                            <strong>
+                                <span id=player2name></span>
+                            </strong>
+                        </p>
+                        <p id="player2Score">0</p>
+                        <p id="player2Par">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="inputDetails" class="display">
+            <i class="far fa-times-circle"></i>
+            <form>
+                <div class="form-group">
+                    <label for="inputCourse">Golf Course</label>
+                    <input id="inputCourse" class="form-control" type="text" placeholder="Golf Course">
+                </div>
+                <div class="form-group">
+                    <label for="inputPlayerOne">Player One</label>
+                    <input id="inputPlayerOne" class="form-control" type="text" placeholder="Player 1">
+                </div>
+                <div class="form-group">
+                    <label for="inputPlayerTwo">Player Two</label>
+                    <input id="inputPlayerTwo" class="form-control" type="text" placeholder="Player 2">
+                </div>
+            </form>
+        </div>
+        <!-- Background Image 50% opacity -->
+        <img id="bgimage" src="https://images.pexels.com/photos/33478/golf-sunset-sport-golfer.png?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

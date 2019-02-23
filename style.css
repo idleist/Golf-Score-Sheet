@@ -1,0 +1,123 @@
+body {
+  font-family: 'Lobster Two', cursive;
+}
+
+#background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #c3c3c3;
+}
+
+#bgimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100%;
+  opacity: 0.5;
+}
+
+#scoreCard {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+#scoreHeader {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#scoreBody {
+  position: relative;
+}
+
+#scoreBody1{
+  background-color:#ffffb3;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+  margin: 0;
+  padding: 5px 0;
+}
+
+
+#scoreBody2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9999;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+  margin: 0;
+  padding: 5px 0;
+}
+
+#scoreFooter {
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+  width: 50%;
+  margin-right: 0;
+}
+
+.col-sm-1 > input {
+  width: 100%;
+}
+
+.col-sm-1 > p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#inputDetails {
+  position: absolute;
+  width: 40%;
+  background-color: white;
+  z-index: 2;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+}
+
+.display{
+  display: none;
+}
+
+input[type="radio"] {
+  width: 14px;
+  margin-bottom: 30px;
+
+}
+input[type="radio"] + label{
+  font-size: 10px
+}
+
+.col-sm-1 {
+  margin: 0;
+  padding: 4px;
+}
+
+.far {
+  float: right;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.col-sm-2 > p{
+  margin: 10px 0;
+  padding: 0 40px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+
